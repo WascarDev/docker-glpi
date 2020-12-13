@@ -1,7 +1,7 @@
 # First stage : download glpi + build it
 FROM composer:latest as build_glpi
 
-ARG GLPI_VERSION
+ARG GLPI_VERSION=9.5.3
 ARG GLPI_PATHS_ROOT=/var/www
 
 RUN mkdir -p "${GLPI_PATHS_ROOT}"
